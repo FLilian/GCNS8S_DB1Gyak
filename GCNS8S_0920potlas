@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+int main()
+{
+    FILE *fp;
+    fp = fopen("munka.txt", "w");
+
+    char IN;
+    printf("Adja meg a szoveget a lezarast a (#) jelzi :\n");
+
+    while( (IN = getchar()) != '#' )
+        {
+            putc(IN, fp);
+        }
+
+    fclose(fp);
+
+    fp = fopen("munka.txt", "r");
+
+    while( (IN = getc(fp)) != EOF )
+        {
+            printf("%c", toupper(IN) );
+        }
+
+    fclose(fp);
+
+    return 0;
+}
