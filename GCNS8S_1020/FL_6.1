@@ -1,0 +1,16 @@
+CREATE DATABASE GCNS8S;
+USE GCNS8S;
+
+CREATE TABLE GYARTO (
+	adoszam int NOT NULL PRIMARY KEY,
+	nev VARCHAR(30),
+	telephely VARCHAR(30)
+);
+
+CREATE TABLE TERMEK (
+	tkod int NOT NULL PRIMARY KEY,
+	nev VARCHAR(50),
+	ear int NOT NULL,
+	gyarto int,
+	FOREIGN KEY (gyarto) REFERENCES GYARTO(adoszam)
+);
