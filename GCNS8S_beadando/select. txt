@@ -1,0 +1,14 @@
+Select nev from Eladok order by nev;
+Select nev from Termek where ar>7500;
+select count(mid) from mufaj where nev='Horror';
+select nev from Videotekak where meret=(select max (meret) from Videotekak);
+select * from Vasarlok;
+SELECT termek.nev, mufaj.nev from termek inner join mufaj on termek.mid=mufaj.mid;
+Select nev from Vasarlok Where telefonszam Like '620%';
+Select max(nepszeruseg) from Mufaj ; 
+select Vasarlok.nev, mufaj.nev , Videotekak.nev, Termek.nev from Vasarlok 
+join Videotekak on Videotekak.vid=Vasarlok.vid 
+join tarolas on tarolas.vid=videotekak.vid 
+join termek on termek.tid=tarolas.tid 
+join mufaj on termek.mid=mufaj.mid where mufaj.nev='Sci-fi';
+Select nev from vasarlok where vaid = (Select Vaid from igazolvanyok where igazolvanyok = 'Jogsi');

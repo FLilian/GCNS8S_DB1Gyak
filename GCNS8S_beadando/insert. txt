@@ -1,0 +1,77 @@
+BEGIN
+INSERT INTO Mufaj VALUES (1,'Horror',4,'26.02.1950');
+INSERT INTO Mufaj VALUES (2,'Fantasy',8,'15.04.1903');
+INSERT INTO Mufaj VALUES  (3,'Comedia',10,'27.05.1918');
+INSERT INTO Mufaj VALUES (4,'Romantice',9,'16.03.1979');
+INSERT INTO Mufaj VALUES (5,'Rom-Com',9,'28.06.1968');
+INSERT INTO Mufaj VALUES  (6,'Sci-fi',2,'26.04.1940');
+INSERT INTO Mufaj VALUES (7,'Action',7,'27.05.1962');
+INSERT INTO Mufaj VALUES  (8,'Thriller',3,'21.02.1956');
+INSERT INTO Mufaj VALUES  (9,'Drama',10,'04.01.1922');
+END;
+BEGIN
+INSERT INTO Videotekak VALUES (1,40,'Ap #205-3890 Non, Street','Vidishop');
+INSERT INTO Videotekak VALUES (2,45,'Ap #388-6530 Dui, Avenue','Vidibolt');
+INSERT INTO Videotekak VALUES  (3,35,'P.O. Box 712, 5926 Tellus Rd.','Vidimidi');
+INSERT INTO Videotekak VALUES (4,34,'Ap #873-8973 Tristique Street','Vidiidi');
+INSERT INTO Videotekak VALUES (5,41,'P.O. Box 782, 2374 Amet St.','Vidisop');
+INSERT INTO Videotekak VALUES  (6,36,'P.O. Box 315, 3627 Cras St.','Vidibolti');
+INSERT INTO Videotekak VALUES (7,29,'P.O. Box 969, 7044 Suscipit, Avenue','Vidimidii');
+INSERT INTO Videotekak VALUES  (8,38,'243-1550 Sapien. Rd.','Vidiidik');
+INSERT INTO Videotekak VALUES  (9,44,'715-5959 Gravida St.','Vidik');
+END;
+BEGIN
+INSERT INTO Eladok VALUES (1,'Baranyi Gábor','Miskolc','2001.03.22',1);
+INSERT INTO  Eladok VALUES (2,'Schmidt Bence','Gyula','1997.01.06',2);
+INSERT INTO Eladok VALUES  (3,'Nagy Máté','Satoraljaujhely','1997.07.16',3);
+INSERT INTO Eladok VALUES (4,'Kádár Konrád','Debrecen','2000.11.03',4);
+INSERT INTO Eladok VALUES (5,'Sóskúti Dávid','Jászberény','1999.04.16',5);
+INSERT INTO Eladok VALUES  (6,'Czocher ZSolt','Szeghalom','1997.01.27',6);
+INSERT INTO Eladok VALUES (7,'Flasko Lilian','Ozd','2000.03.11',7);
+INSERT INTO Eladok VALUES  (8,'Flasko Dávid','Ozd','1998.11.05',8);
+INSERT INTO Eladok VALUES  (9,'Balázs Zoltán','Szeged','1996.05.14',9);
+END;
+BEGIN
+INSERT INTO Vasarlok VALUES (1,'P.O. Box 685, 1745 Ullamcorper. Av','Baranyi Zsófia',6704188499,1);
+INSERT INTO Vasarlok VALUES (2,'	392-6481 A, Street','Schmidt Ágnes',6202882455,2);
+INSERT INTO Vasarlok VALUES  (3,'Ap #592-2127 Sed St.','Nagy Tímea',6204829810,3);
+INSERT INTO Vasarlok VALUES (4,'156-5009 Urna. Avenue	','Kádár Orsolya',6305632688,4);
+INSERT INTO Vasarlok VALUES (5,'9528 Malesuada Rd.','Sóskúti György',6304345625,5);
+INSERT INTO Vasarlok VALUES  (6,'Ap #572-800 Eu St.','Czocher Erik',649412724,6);
+INSERT INTO Vasarlok VALUES (7,'191-5055 Amet Street','Flasko István',6204393267,7);
+INSERT INTO Vasarlok VALUES  (8,'946-9280 Felis Road','Flasko János',6204468252,8);
+INSERT INTO Vasarlok VALUES  (9,'P.O. Box 203, 8939 Lobortis, Avenue','Balázs Balázs',6309115818,9);
+END;
+BEGIN
+INSERT INTO Igazolvanyok VALUES (1,'Lakcím');
+INSERT INTO  Igazolvanyok VALUES (2,'TAJ');
+INSERT INTO Igazolvanyok VALUES  (3,'Jogsi');
+INSERT INTO Igazolvanyok VALUES (4,'személyi');
+INSERT INTO Igazolvanyok VALUES (5,'Adó');
+INSERT INTO Igazolvanyok VALUES  (6,'Diák');
+INSERT INTO Igazolvanyok VALUES (7,'Bank');
+INSERT INTO Igazolvanyok VALUES  (8,'TAJ');
+INSERT INTO Igazolvanyok VALUES  (9,'Adó');
+END;
+BEGIN
+INSERT INTO Termek VALUES (1,'Az ágy neve Máté','24.11.2021',100,1);
+INSERT INTO  Termek VALUES (2,'Mózi vezetni indul','23.11.2021',2500,2);
+INSERT INTO Termek VALUES  (3,'Bence és Gabi eks-e','25.11.2021',5000,3);
+INSERT INTO Termek VALUES (4,'110-es szoba titkai','02.09.2021',4500,4);
+INSERT INTO Termek VALUES (5,'A raktár szoba','05.10.2021',3000,5);
+INSERT INTO Termek VALUES  (6,'A buli itt zárul','11.03.2021',2950,6);
+INSERT INTO Termek VALUES (7,'Lili hajnala','12.03.1999',12000,7);
+INSERT INTO Termek VALUES  (8,'A  végtelen Kádár bosszúja','23.11.2021',4520,8);
+INSERT INTO Termek VALUES  (9,'A BMW fulladása','24.11.2021',255,9);
+END;
+BEGIN
+INSERT INTO Tarolas VALUES (1,10,1);
+INSERT INTO  Tarolas VALUES (2,15,2);
+INSERT INTO Tarolas VALUES  (3,21,3);
+INSERT INTO Tarolas VALUES (4,42,4);
+INSERT INTO Tarolas VALUES (5,13,5);
+INSERT INTO Tarolas VALUES  (6,5,6);
+INSERT INTO Tarolas VALUES (7,10,7);
+INSERT INTO Tarolas VALUES  (8,20,8);
+INSERT INTO Tarolas VALUES  (9,19,9);
+END;

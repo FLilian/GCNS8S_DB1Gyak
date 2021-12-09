@@ -1,0 +1,49 @@
+create table Mufaj (
+    mid number(3) primary key,
+    nev varchar2(255) not null,
+    nepszeruseg number(2) not null,
+    letrejott varchar2(255) not null
+);
+create table Videotekak (
+    vid number(3) primary key,
+    meret number(3) not null,
+    vcím varchar2(255) not null,
+    nev varchar2(255) not null
+);
+create table Eladok (
+    eid number(3) primary key,
+    nev varchar2(255) not null,
+    szülhely varchar2(255) not null,
+    szülido varchar2(255) not null,
+    vid number(3),
+    foreign key (vid) references Videotekak(vid) 
+);
+create table Vasarlok (
+    vaid number(3) primary key,
+    vacim varchar2(255) not null,
+    nev varchar2(255) not null,
+    telefonszam number(11) not null,
+    vid number(3),
+    foreign key (vid) references Videotekak(vid) 
+);
+create table Igazolvanyok (
+    vaid number(3) primary key,
+    igazolvanyok varchar2(255) not null,
+    foreign key (vaid) references Vasarlok(vaid) 
+);
+create table Termek (
+    tid number(3) primary key,
+    nev varchar2(255) not null,
+    megjelenesido varchar2(255) not null,
+    ar number (5) not null,
+    mid number(3),
+    foreign key (mid) references Mufaj(mid) 
+);
+create table Tarolas (
+    tid number(3),
+    dbszam number(3) not null,
+    vid number(3),
+    foreign key (tid) references Termek(tid),
+    foreign key (vid) references Videotekak(vid) 
+);
+
